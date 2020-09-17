@@ -1,7 +1,6 @@
 class Adapter {
-  static getShows (){
-    fetch("http://api.tvmaze.com/shows")
-    .then(res => res.json())
+  static getShows() {
+    return fetch("http://api.tvmaze.com/shows").then((res) => res.json());
   }
 
   // static getShowEpisodes (showID){
@@ -10,4 +9,4 @@ class Adapter {
   // }
 }
 
-export default Adapter
+export default Adapter;
